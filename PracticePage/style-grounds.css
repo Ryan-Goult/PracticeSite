@@ -1,0 +1,94 @@
+
+.-sg-column
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.-sg-column-c-center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.-sg-row
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.-sg-margin-b
+{
+    margin-bottom: 10px;
+}
+
+.-sg-margin-t
+{
+    margin-top: 10px;
+}
+
+.-sg-margin-l
+{
+    margin-left: 5px;
+}
+
+.-sg-legend
+{
+    font-size: 1em;
+}
+
+.-sg-title
+{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.-sg-grow
+{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.-sg-button
+{
+    width: max-content;
+    max-width: 120px;
+    background-color: rgb(236 111 12);
+    color: white;
+    border-radius: 3px;
+    border: 0;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.-sg-button:hover
+{
+    transition: background-color 0.3s ease;
+    background-color: rgb(243, 163, 13);
+}
+
+.n-s
+{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.n-p
+{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+    pointer-events: none;
+}

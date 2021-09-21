@@ -1,0 +1,241 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.core
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    padding: 3vmin;
+    color: white;
+    font-family: quicksand;
+
+    -webkit-box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.45);
+    box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.45);
+}
+
+.banner
+{
+    height: 50vh;
+    border: 2px solid #5aafe8;
+    background-image: url(./assets/main-banner.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 60%;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.wave
+{
+    position: absolute;   
+    bottom: 0;
+    left: 0;
+	width: 100%;
+}
+
+.banner-bottom
+{
+    height: 30px;
+    background-color: white;
+    position: absolute;
+}
+
+.banner-bottom[piece="1"]
+{
+    width: 56%;
+    height: 44px;
+    border-radius: 0 80% 0 0;
+    bottom: -27px;
+    left: 0;
+}
+
+.banner-bottom[piece="2"]
+{
+    width: 63%;
+    height: 44px;
+    border-radius: 0 80% 0 0;
+    bottom: -18px;
+    left: 0;
+    opacity: 0.8;
+}
+
+.banner-bottom[piece="3"]
+{
+    width: 70%;
+    height: 44px;
+    border-radius: 0 80% 0 0;
+    bottom: -27px;
+    left: 0;
+    opacity: 0.5;
+}
+
+.banner-bottom[piece="4"]
+{
+    width: 50%;
+    height: 44px;
+    border-radius: 80% 0 0 0;
+    bottom: -27px;
+    right: 0;
+    opacity: 1;
+}
+
+.banner-bottom[piece="5"]
+{
+    width: 41%;
+    height: 50px;
+    border-radius: 96% 0 0 0;
+    bottom: -27px;
+    right: 0;
+    opacity: 0.5;
+}
+
+.content
+{
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.content-header
+{
+    padding: 0 35vw 0 35vw;
+    margin-bottom: 40px;
+}
+
+.dog-bubbles
+{
+    justify-content: center;
+}
+
+.dog-bubble
+{
+    height: auto;
+    width: 225px;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+
+    -webkit-box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.45);
+    box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.45);
+}
+
+.dog-photo
+{
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 158px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.dog-photo[photo="1"]
+{
+    background-image: url("./assets/card-image-walking.png");
+}
+
+.dog-photo[photo="2"]
+{
+    background-image: url("./assets/card-image-boarding.png");
+}
+
+.dog-photo[photo="3"]
+{
+    background-image: url("./assets/card-image-sitting.png");
+}
+
+.dog-bubble-content
+{
+    text-align: left;
+    padding: 15px;
+}
+
+.dog-bubble-title
+{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.dog-bubble-legend
+{
+    font-size: 0.7em;
+    line-height: calc(0.7em + 8px);
+    color: rgb(92, 92, 92);
+}
+
+.dog-bubble-link
+{
+    color: rgb(197, 103, 21);
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.icon
+{
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-left: 2px;
+}
+
+@media only screen and (min-width: 1800px) 
+{
+    .-sg-title
+    {
+        font-size: 2.5em;
+    }
+
+    .-sg-legend
+    {
+        font-size: 1.2em;
+    }
+
+    .dog-bubble-legend
+    {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 1200px) 
+{
+    .content-header
+    {
+        padding: 0 25vw 0 25vw;
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{
+    .content-header
+    {
+        padding: 0 15vw 0 15vw;
+    }
+
+    .dog-bubbles
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dog-bubble
+    {
+        margin-bottom: 25px;
+    }
+
+    .banner
+    {
+        padding-left: 10%;
+        padding-right: 20px;
+    }
+}
